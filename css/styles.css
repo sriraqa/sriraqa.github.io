@@ -171,10 +171,11 @@ p {
 .paragraph {
   font-family: var(--bs-body-font-family);
   font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
+  font-weight: 400;
+  font-size: 20px;
   letter-spacing: -0.03em;
+  line-height: 1.6;
+
   color: var(--bs-gray-dark);
 }
 
