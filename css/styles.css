@@ -95,7 +95,6 @@ hr:not([size]) {
 }
 
 li {
-  line-height: 1.5;
   font-family: var(--bs-body-title-family);
 }
 
@@ -162,7 +161,7 @@ p {
   font-family: var(--bs-body-font-family);
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: -0.03em;
 
   color: var(--bs-gray-dark);
@@ -172,7 +171,7 @@ p {
   font-family: var(--bs-body-font-family);
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: -0.03em;
   line-height: 1.6;
 
@@ -11522,11 +11521,11 @@ header.masthead .site-heading .h1 {
   font-size: 1.875rem;
 }
 .post-preview > a > .post-subtitle {
+  font-size: 18px;
   font-weight: 300;
-  margin-bottom: 0.5rem;
+  font-family: Nunito;
 }
 .post-preview > .post-meta {
-  font-size: 1rem;
   font-style: italic;
   margin-top: 0;
   color: #6c757d;
