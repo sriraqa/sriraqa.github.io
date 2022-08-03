@@ -3704,15 +3704,15 @@ textarea.form-control-lg {
 /* (B) LIGHTBOX IMAGE */
 #lightbox img {
   /* (B1) DIMENSIONS */
-  width: 85%;
-  height: auto;
+  max-width: 85%;
+  max-height: 700px;
   display: block;
   margin-left: auto;
   margin-right: auto;
  
   /* (B2) IMAGE FIT */
   /* contain | cover | fill | scale-down */
-  object-fit: cover;
+  object-fit: scale-down;
 }
  
 
