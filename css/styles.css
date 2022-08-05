@@ -149,8 +149,8 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 h6, .h6 {
@@ -889,7 +889,8 @@ progress {
 }
 
 .offset-3 {
-  margin-left: 25%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .offset-4 {
@@ -2840,8 +2841,26 @@ textarea.form-control-lg {
   transition: all 0.2s;
 }
 .box:hover {
-  box-shadow: -9px 9px 0 0 var(--bs-primary), -9px 9px 0 2.5px var(--bs-gray-dark);
-  transform: translate3d(9px, -9px, 0);
+  box-shadow: -13px 13px 0 0 var(--bs-primary), -13px 13px 0 2.5px var(--bs-gray-dark);
+  transform: translate3d(13px, -13px, 0);
+}
+
+.smallbox {
+  display: block;
+  text-decoration: none;
+  color: var(--bs-gray-dark);
+  padding: 20px 35px;
+  padding-left: 7%;
+  padding-right:7%;
+  font-size: 20px;
+  font-weight: 700;
+  border: 2.5px solid var(--bs-gray-dark);
+  box-shadow: 0px 0px 0 0 var(--bs-primary);
+  transition: all 0.2s;
+}
+.smallbox:hover {
+  box-shadow: -5px 5px 0 0 var(--bs-primary), -5px 5px 0 2.5px var(--bs-gray-dark);
+  transform: translate3d(5px, -5px, 0);
 }
 
 .gallery-container {
