@@ -23,7 +23,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #2BA899;
+  --bs-primary: #87C1B3;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -879,18 +879,18 @@ progress {
 }
 
 .offset-1 {
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
-.offset-2 {
   padding-left: 20%;
   padding-right: 20%;
 }
 
+.offset-2 {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
 .offset-3 {
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .offset-4 {
@@ -11420,7 +11420,7 @@ blockquote {
 
 
 footer {
-  background-color:rgb(246, 249, 249);
+  /* background-color:rgb(246, 249, 249); */
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
