@@ -96,14 +96,14 @@ hr:not([size]) {
 
 li {
   font-family: var(--bs-body-title-family);
-  font-size: calc(16px + 0.1vw);
+  font-size: 16px;
   font-weight: 400;
   
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   font-family: var(--bs-body-title-family);
   font-weight: 800;
   color: var(--bs-gray-dark);
@@ -112,19 +112,19 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 h1, .h1 {
   font-family: var(--bs-body-title-family);
   font-weight: 600;
-  font-size: calc(67.78px + 1.62vw);
+  font-size: 64px;
 }
 
 h2, .h2 {
   font-family: var(--bs-body-title-family);
   font-weight: 500;
-  font-size: calc(25.89px + 1.62vw);
+  font-size: 32px;
 }
 
 h3, .h3 {
   font-family: var(--bs-body-title-family);
   font-weight: 500;
-  font-size: calc(41.89px + 1.62vw);
+  font-size: 56px;
 }
 /* @media (min-width: 1200px) {
   h3, .h3 {
@@ -133,22 +133,22 @@ h3, .h3 {
 } */
 
 h4, .h4 {
-  font-size: calc(16px + 0.7vw);
+  font-size: 24px;
 }
 
 h5, .h5 {
-  font-size: calc(12px + 1.62vw);
+  font-size: 32px;
   font-weight: 400;
 }
 
 h6, .h6 {
-  font-size: calc(16px + 0.1vw);
+  font-size: 16px;
 }
 
 p {
   font-family: var(--bs-body-font-family);
   font-weight: 400;
-  font-size: 1calc(16px + 0.1vw);
+  font-size: 16px;
   line-height: 25px;
 
   color: var(--bs-gray-dark);
@@ -157,7 +157,7 @@ p {
 .paragraph {
   font-family: var(--bs-body-font-family);
   font-weight: 400;
-  font-size: calc(16px + 0.1vw);
+  font-size: 16px;
   line-height: 25px;
 
   color: var(--bs-gray-dark);
@@ -879,13 +879,31 @@ progress {
 }
 
 .offset-1 {
-  padding-left: 20%;
-  padding-right: 20%;
+  max-width: 800px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.offset-1-coloured {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 .offset-2 {
-  padding-left: 25%;
-  padding-right: 25%;
+  max-width: 720px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.offset-2-coloured {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 720px;
+  margin: auto;
 }
 
 .offset-3 {
