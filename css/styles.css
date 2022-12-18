@@ -11,7 +11,7 @@
   --bs-green: #198754;
   --bs-teal: #0085A1;
   --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
+  --bs-white: #FCFBF7;
   --bs-gray: #6c757d;
   --bs-gray-dark: #46464A;
   --bs-gray-100: #f8f9fa;
@@ -31,7 +31,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 0, 133, 161;
+  --bs-primary-rgb: 76, 163, 142;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -39,20 +39,20 @@
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
+  --bs-white-rgb: 252, 251, 247;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: "Nunito";
   --bs-font-monospace: "Nunito", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient: linear-gradient(180deg, rgba(252, 251, 247, 0.15), rgba(252, 251, 247, 0));
   --bs-body-title-family: "Poppins";
   --bs-body-font-family: "Nunito", Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: calc(16px + 0.1vm);
   --bs-body-font-weight: 500;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #FCFBF7;
 }
 
 *,
@@ -81,7 +81,7 @@ body {
 }
 
 .white {
-  color: white;
+  color: #FCFBF7;
 }
 
 hr {
@@ -143,6 +143,12 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 16px;
+}
+
+.subtitle {
+  font-family: var(--bs-body-font-family);
+  font-weight: 500;
+  font-size: 20px;
 }
 
 p {
@@ -289,7 +295,7 @@ section {
   
 }
 section.ok{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(252, 251, 247);
 }
 
 a {
@@ -342,7 +348,7 @@ a > code {
 kbd {
   padding: 0.2rem 0.4rem;
   font-size: 0.875em;
-  color: #fff;
+  color: #FCFBF7;
   background-color: #212529;
 }
 kbd kbd {
@@ -663,7 +669,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #FCFBF7;
   border: 1px solid #dee2e6;
   max-width: 100%;
   height: auto;
@@ -685,7 +691,6 @@ progress {
 
 
 .container-sm {
-  width: 100%;
   margin-right: 10%;
   margin-left: 10%;
 }
@@ -878,6 +883,44 @@ progress {
 .col-12 {
   flex: 0 0 auto;
   width: 100%;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #FCFBF7;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 2.5px solid var(--bs-gray-dark);
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: rgb(246, 245, 241);
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: auto;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
 }
 
 .offset-1 {
@@ -2190,7 +2233,7 @@ progress {
 }
 
 .table-warning {
-  --bs-table-bg: #fff3cd;
+  --bs-table-bg: #FCFBF73cd;
   --bs-table-striped-bg: #f2e7c3;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #e6dbb9;
@@ -2228,12 +2271,12 @@ progress {
 .table-dark {
   --bs-table-bg: #212529;
   --bs-table-striped-bg: #2c3034;
-  --bs-table-striped-color: #fff;
+  --bs-table-striped-color: #FCFBF7;
   --bs-table-active-bg: #373b3e;
-  --bs-table-active-color: #fff;
+  --bs-table-active-color: #FCFBF7;
   --bs-table-hover-bg: #323539;
-  --bs-table-hover-color: #fff;
-  color: #fff;
+  --bs-table-hover-color: #FCFBF7;
+  color: #FCFBF7;
   border-color: #373b3e;
 }
 
@@ -2310,7 +2353,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #FCFBF7;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -2332,7 +2375,7 @@ progress {
 }
 .form-control:focus {
   color: #212529;
-  background-color: #fff;
+  background-color: #FCFBF7;
   border-color: #80c2d0;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(0, 133, 161, 0.25);
@@ -2526,7 +2569,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #FCFBF7;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -2590,7 +2633,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #FCFBF7;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2617,15 +2660,15 @@ textarea.form-control-lg {
   border-color: #0085A1;
 }
 .form-check-input:checked[type=checkbox] {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23FCFBF7' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
 }
 .form-check-input:checked[type=radio] {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23FCFBF7'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
   background-color: #0085A1;
   border-color: #0085A1;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23FCFBF7' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
   pointer-events: none;
@@ -2656,7 +2699,7 @@ textarea.form-control-lg {
 }
 .form-switch .form-check-input:checked {
   background-position: right center;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23FCFBF7'/%3e%3c/svg%3e");
 }
 
 .form-check-inline {
@@ -2688,10 +2731,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(0, 133, 161, 0.25);
+  box-shadow: 0 0 0 1px #FCFBF7, 0 0 0 0.25rem rgba(0, 133, 161, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(0, 133, 161, 0.25);
+  box-shadow: 0 0 0 1px #FCFBF7, 0 0 0 0.25rem rgba(0, 133, 161, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -2842,7 +2885,7 @@ textarea.form-control-lg {
   color: var(--bs-gray-dark);
   font-size: 20px;
   font-weight: 700;
-  border: 0px solid white;
+  border: 0px solid #FCFBF7;
   /* box-shadow: 0px 0px 0 0 var(--bs-primary); */
   transition: all 0.2s;
   box-shadow: 90px 50px 0 0 var(--bs-primary);
@@ -3067,7 +3110,7 @@ textarea.form-control-lg {
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
   font-size: 0.875rem;
-  color: #fff;
+  color: #FCFBF7;
   background-color: rgba(25, 135, 84, 0.9);
 }
 
@@ -3155,7 +3198,7 @@ textarea.form-control-lg {
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
   font-size: 0.875rem;
-  color: #fff;
+  color: #FCFBF7;
   background-color: rgba(220, 53, 69, 0.9);
 }
 
@@ -3348,7 +3391,7 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
 }
 .btn-success:disabled, .btn-success.disabled {
-  color: #fff;
+  color: #FCFBF7;
   background-color: #198754;
   border-color: #198754;
 }
@@ -6144,11 +6187,11 @@ textarea.form-control-lg {
   } ]
 } */
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FCFBF7'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FCFBF7'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .carousel-indicators {
@@ -6199,7 +6242,7 @@ textarea.form-control-lg {
   left: 15%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  color: #fff;
+  color: #FCFBF7;
   text-align: center;
 }
 
@@ -6294,7 +6337,7 @@ textarea.form-control-lg {
   flex-direction: column;
   max-width: 100%;
   visibility: hidden;
-  background-color: #fff;
+  background-color: #FCFBF7;
   background-clip: padding-box;
   outline: 0;
   transition: transform 0.3s ease-in-out;
@@ -6948,7 +6991,7 @@ textarea.form-control-lg {
 }
 
 .border-white {
-  border-color: #fff !important;
+  border-color: #FCFBF7 !important;
 }
 
 .border-1 {
@@ -11386,7 +11429,7 @@ blockquote {
   padding-top: 15px;
   padding-bottom: 15px;
   z-index: 1030;
-  background-color: #fff;
+  background-color: #FCFBF7;
   font-family: var(--bs-body-font-family);
 }
 #mainNav .navbar-brand {
@@ -11411,7 +11454,7 @@ blockquote {
 @media (min-width: 992px) {
   #mainNav {
     border-bottom: transparent;
-    background: #fff;
+    background: #FCFBF7;
   }
   #mainNav .navbar-brand {
     color: var(--bs-gray-dark);
@@ -11433,7 +11476,7 @@ blockquote {
     position: fixed;
     top: -118px;
     transition: transform 0.2s;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(252, 251, 247, 0.5);
     backdrop-filter: blur(15px);
   }
   #mainNav.is-fixed .navbar-brand {
@@ -11472,7 +11515,7 @@ header.masthead {
   background-size: cover;
   background-attachment: scroll;
 }
-header.masthead:before {
+/* header.masthead:before {
   content: "";
   position: absolute;
   top: 0;
@@ -11480,11 +11523,11 @@ header.masthead:before {
   right: 0;
   bottom: 0;
   opacity: 0.5;
-}
+} */
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  color: #fff;
+  color: #FCFBF7;
 }
 header.masthead .page-heading,
 header.masthead .site-heading {
@@ -11531,7 +11574,7 @@ header.masthead .post-heading .meta {
   font-family: Nunito, "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .post-heading .meta a {
-  color: #fff;
+  color: #FCFBF7;
 }
 @media (min-width: 992px) {
   header.masthead {
