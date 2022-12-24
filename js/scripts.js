@@ -23,6 +23,25 @@
     });
   })
 
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
 window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container
@@ -39,7 +58,7 @@ window.smoothScroll = function(target) {
     
     scroll = function(c, a, b, i) {
         i++; if (i > 30) return;
-        c.scrollTop = a + (b - a) / 30 * i;
+        c.scrollTop = a + (b) / 30 * i;
         setTimeout(function(){ scroll(c, a, b, i); }, 20);
     }
     // start scrolling
