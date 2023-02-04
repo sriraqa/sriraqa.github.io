@@ -3803,7 +3803,7 @@ textarea.form-control-lg {
 #lightbox img {
   /* (B1) DIMENSIONS */
   max-width: 85%;
-  max-height: 650px;
+  max-height: 90vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -3811,6 +3811,17 @@ textarea.form-control-lg {
   /* (B2) IMAGE FIT */
   /* contain | cover | fill | scale-down */
   object-fit: scale-down;
+}
+
+.fadein {
+  opacity: 0;
+  transition: all 1s;
+  transform: translate(0, 70px);
+}
+
+.fadein.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
  
 
