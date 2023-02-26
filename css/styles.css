@@ -24,6 +24,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #4CA38E;
+  --bs-light-primary: #77c3b39f;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -149,6 +150,11 @@ h6, .h6 {
   font-family: var(--bs-body-font-family);
   font-weight: 500;
   font-size: 20px;
+}
+
+.subtitle > a {
+  border-bottom: 2px solid var(--bs-light-primary);
+  padding-bottom: 1px;
 }
 
 p {
@@ -301,11 +307,11 @@ section.ok{
 a {
   color: var(--bs-gray-dark);
   text-decoration: none;
+  
 }
 
 a:hover {
   cursor: pointer;
-  text-decoration: underline;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11406,7 +11412,8 @@ p {
   margin: 0rem 0rem;
 }
 p a {
-  text-decoration: underline;
+  border-bottom: 2px solid var(--bs-light-primary);
+  padding-bottom: 0.3px;
 }
 
 blockquote {
