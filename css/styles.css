@@ -70,6 +70,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden !important;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -708,13 +709,19 @@ progress {
 .container-lg,
 .container-md {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin-inline: auto;
+  overflow-x: hidden !important;
+}
+
+@media (max-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
 }
 
 @media (min-width: 576px) {
   .container-sm, .container {
-    /* max-width: 540px; */
+    max-width: 540px;
   }
 }
 @media (min-width: 768px) {
@@ -833,10 +840,20 @@ progress {
   flex: 0 0 auto;
   width: 33.33333333%;
 }
+.col-4 hr {
+  padding-left: 30px; 
+  padding-right: 30px;
+  font-size: 24px;
+}
 @media screen and (max-width: 990px) {
   .col-4 {
     flex: 0 0 auto;
     width: 100%;
+  }
+}
+@media screen and (min-width: 990px) {
+  .col-4 h2 {
+    display: none;
   }
 }
 
@@ -856,6 +873,11 @@ progress {
 }
 @media screen and (max-width: 990px) {
   .col-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .col-6 h2 {
+    display: none;
     flex: 0 0 auto;
     width: 100%;
   }
@@ -4535,7 +4557,6 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
-    justify-content: flex-start;
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -11525,8 +11546,6 @@ footer {
 header.masthead {
   position: relative;
   margin-bottom: 3rem;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: calc(5rem + 50px);
   padding-bottom: 6rem;
   background: no-repeat center center;
