@@ -97,12 +97,12 @@ hr:not([size]) {
 }
 
 li {
-  font-family: var(--bs-body-font-family);
+  /* font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
-  text-align: var(--bs-body-text-align);
+  text-align: var(--bs-body-text-align); */
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -210,7 +210,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 ol ol,
@@ -3834,8 +3834,8 @@ textarea.form-control-lg {
 /* (B) LIGHTBOX IMAGE */
 #lightbox img {
   /* (B1) DIMENSIONS */
-  max-width: 85%;
-  max-height: 90vh;
+  max-width: 95vw;
+  max-height: 95vh;
   display: block;
   margin-left: auto;
   margin-right: auto;

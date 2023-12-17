@@ -69,3 +69,23 @@ window.onload = () => {
 };
 
 
+function ivs() {
+  var s ="";
+
+  while (s!== "ivs@2023")
+  {
+    s=prompt("This is a password protected case study. \n\nPlease enter the password:");
+    if (s==="ivs@2023") {
+      window.location.href="ivshidden.html";
+    }
+    else if (!s) {
+      break;
+    }
+    else {
+      alert("Incorrect password.");
+      break;
+    }
+  }
+};
+
+
