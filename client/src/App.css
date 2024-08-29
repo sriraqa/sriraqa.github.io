@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
 
 .App {
@@ -6,6 +10,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100vw;
 }
 
 .App-logo {
@@ -44,5 +49,11 @@
 
 .body {
   padding: 24px 32px;
+  padding-top: 96px;
+  height: 100vh;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
 }

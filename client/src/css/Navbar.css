@@ -1,4 +1,14 @@
 .navbar {
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  background-color: #FCFBF7;
+  /* border-bottom: 1.5px solid #46464a80; */
+  top: 0;
+  left: 0;
+}
+
+.navbar-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,7 +19,7 @@
 .menu {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 36px;
 }
 
 .menu-item {
@@ -30,13 +40,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   color: #46464A;
   font-weight: 700;
   font-size: 24px;
+  text-decoration: none;
 }
 
 .logo {
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
 }
