@@ -26,11 +26,22 @@ export default function Home() {
             </svg> */}
           </div>
         </div>
-        <img className="h-[200px] mt-4 mb-10" src={illustration}/>
+        <div className="mt-4 mb-10 bg-illustration-bg max-h-[200px] max-w-[220px] min-h-[200px] min-w-[220px]">
+          <img className="button max-h-[200px] max-w-[220px] min-h-[200px] min-w-[220px]" src={illustration}/>
+        </div>
       </div>
 
       {/* Projects */}
-      <div className="w-full max-w-[812px]" id="portfolio">
+      <div className="flex flex-col space-y-12 w-full max-w-[812px]" id="portfolio">
+        <Button>
+          Hi
+        </Button>
+        <Button>
+          Hi
+        </Button>
+        <Button>
+          Hi
+        </Button>
         <Button>
           Hi
         </Button>

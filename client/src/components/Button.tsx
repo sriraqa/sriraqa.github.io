@@ -13,7 +13,7 @@ const Button = forwardRef<
       ref={ref}
       className="bg-primary-pattern bg-[length:560px] bg-repeat w-full"
     >
-      <div className="button py-6 px-8 cursor-pointer bg-background">
+      <div className="button border-[2.5px] py-6 px-8 cursor-pointer bg-background">
         {children}
       </div>
     </div>
