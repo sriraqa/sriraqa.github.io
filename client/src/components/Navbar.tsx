@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import { AnimatePresence, motion } from "framer-motion";
 
 import Drawer from "./Drawer";
+import Scribble from "./Scribble";
 
 import { FaBars } from "react-icons/fa6";
 import logo from "../assets/logo.png";
@@ -16,6 +17,7 @@ import "../css/Navbar.css";
 
 export default function Navbar() {
   const [openDrawer, setOpenDrawer] = useState<Boolean>(false);
+  const location = useLocation();
 
   const toggleDrawer = () => setOpenDrawer(!openDrawer);
 
@@ -49,13 +51,18 @@ export default function Navbar() {
           <FaBars size={20} />
         </button>
         <div className="menu hidden sm:flex">
-          <NavLink to="/" className={({ isActive }) =>
-            (isActive ? "menu-item-active" : "menu-item")
-          }>Home</NavLink>
+          <NavLink to="/" className="menu-item">{(location.pathname === "/") ? (
+            <Scribble>Home</Scribble>
+          ) : (
+            <p>Home</p>
+          )}
+          </NavLink>
           <NavHashLink to="/#portfolio" className="menu-item">Portfolio</NavHashLink>
-          <NavLink to="/about" className={({ isActive }) =>
-            (isActive ? "menu-item-active" : "menu-item")
-          }>About</NavLink>
+          <NavLink to="/about" className="menu-item">{(location.pathname === "/about") ? (
+            <Scribble>About</Scribble>
+          ) : (
+            <p>About</p>
+          )}</NavLink>
           <a className="menu-item" href="">Resume</a>
         </div>
       </div>

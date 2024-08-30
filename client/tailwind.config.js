@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: {
         "primary-pattern": "url('/src/assets/primary-pattern.png')",
         "illustration-bg": "url('/src/assets/illustration-background.png')",
+        "scribble": "url('/src/assets/scribble.svg')",
       }
     },
     colors: {

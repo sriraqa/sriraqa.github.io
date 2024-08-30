@@ -1,15 +1,32 @@
+import { useEffect, useState } from "react";
+
 import Button from "../components/Button";
 
 import sparkles from "../assets/sparkles.png";
 import illustration from "../assets/illustration.png";
+import illustrationActive from "../assets/illustration-active.png";
 
 export default function Home() {
+  const [clicked, setClicked] = useState<boolean>(false);
+
+  function timeout(delay: number) {
+    return new Promise( res => setTimeout(res, delay) );
+  }
+
+  useEffect(() => {
+    const reset = async () => {
+      await timeout(800);
+      setClicked(false);
+    }
+    reset();
+  }, [clicked]);
+
   return (
-    <div className="flex flex-col space-y-24 pb-20 w-full min-[930px]:px-28 sm:px-16 items-center">
+    <div className="flex flex-col space-y-4 pb-20 w-full min-[930px]:px-28 sm:px-16 items-center">
       {/* Header */}
-      <div className="pt-12 min-[833px]:pt-28 flex flex-col-reverse min-[833px]:flex-row md:space-x-8 items-start mx-auto">
-        <div className="flex flex-col space-y-2 max-w-[560px] md:h-[70vh]">
-          <div className="flex flex-row sm:space-x-2 items-center">
+      <div className="md:h-[90vh] items-center pb-20 flex flex-col-reverse min-[833px]:flex-row md:space-x-8 items-start mx-auto">
+        <div className="flex flex-col space-y-2 max-w-[560px]">
+          <div className="flex flex-row sm:space-x-2 items-center ">
             <img className="h-[32px] hidden sm:block" src={sparkles}/>
             <p className="text-[32px] sm:text-[36px] font-medium">
               Hi there, I'm Sarah
@@ -26,8 +43,12 @@ export default function Home() {
             </svg> */}
           </div>
         </div>
-        <div className="mt-4 mb-10 bg-illustration-bg max-h-[200px] max-w-[220px] min-h-[200px] min-w-[220px]">
-          <img className="button max-h-[200px] max-w-[220px] min-h-[200px] min-w-[220px]" src={illustration}/>
+        <div className="mt-4 mb-10 bg-illustration-bg max-h-[200px] max-w-[220px] min-h-[200px] min-w-[220px] cursor-pointer">
+          {clicked ? (
+            <img className="button max-h-[200px] max-w-[220px] min-h-[200px] min-w-[220px]" src={illustrationActive}/>
+          ) : (
+            <img onClick={() => setClicked(true)} className="button max-h-[200px] max-w-[220px] min-h-[200px] min-w-[220px]" src={illustration}/>
+          )}
         </div>
       </div>
 

@@ -29,13 +29,6 @@
   color: #46464A;
 }
 
-.menu-item-active {
-  font-size: 20px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #117E6C;
-}
-
 .logo-text {
   display: flex;
   flex-direction: row;
