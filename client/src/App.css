@@ -7,6 +7,7 @@
 .App {
   font-family: 'Sen';
   background-color: #FCFBF7;
+  color: #46464A;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -56,4 +57,9 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 24px;
+}
+
+p a {
+  border-bottom: 2px solid v#97D3C5;
+  padding-bottom: 0.3px;
 }

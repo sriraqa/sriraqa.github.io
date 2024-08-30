@@ -1,0 +1,10 @@
+.button {
+  display: block;
+  border: 2.5px solid #46464A;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  /* box-shadow: -12px 12px 0 0 #83BEB1; */
+  transform: translate3d(12px, -12px, 0);
+}
