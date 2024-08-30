@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import { AnimatePresence, motion } from "framer-motion";
 
 import Drawer from "./Drawer";
@@ -51,7 +52,7 @@ export default function Navbar() {
           <NavLink to="/" className={({ isActive }) =>
             (isActive ? "menu-item-active" : "menu-item")
           }>Home</NavLink>
-          <NavLink to="/#portfolio" className="menu-item">Portfolio</NavLink>
+          <NavHashLink to="/#portfolio" className="menu-item">Portfolio</NavHashLink>
           <NavLink to="/about" className={({ isActive }) =>
             (isActive ? "menu-item-active" : "menu-item")
           }>About</NavLink>
