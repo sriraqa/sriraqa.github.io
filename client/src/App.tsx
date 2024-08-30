@@ -20,7 +20,7 @@ export default function App() {
             <Route index element={<Home />}/>
             <Route path="about" element={<About />}/>
             <Route path="navcare" element={<Navcare />}/>
-            <Route path="newsbear" element={<Newsbear />}/>
+            {/* <Route path="newsbear" element={<Newsbear />}/> */}
             <Route path="interac" element={<Interac />}/>
             <Route path="art" element={<ArtProjects />}/>
             <Route path="*" element={<NoPage />}/>

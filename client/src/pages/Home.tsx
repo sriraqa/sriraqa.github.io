@@ -111,7 +111,7 @@ export default function Home() {
             </div>
           </NavLink>
         </Button>
-        <Button>
+        {/* <Button>
           <NavLink to="/newsbear" className="menu-item">
             <div className="flex flex-row space-x-6 items-center">
               <div className="sm:w-3/5 flex flex-col space-y-4">
@@ -136,7 +136,7 @@ export default function Home() {
               </div>
             </div>
           </NavLink>
-        </Button>
+        </Button> */}
         <Button>
           <NavLink to="/art" className="menu-item">
             <div className="flex flex-row space-x-6 items-center">
