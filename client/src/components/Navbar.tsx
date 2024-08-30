@@ -25,7 +25,7 @@ export default function Navbar() {
     <nav className={`navbar ${openDrawer ? "h-full" : ""}`}>
       <AnimatePresence>
         {openDrawer && (
-          <motion.div className="absolute z-10 h-full w-full text-body"
+          <motion.div className="absolute z-20 h-full w-full text-body"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -63,7 +63,7 @@ export default function Navbar() {
           ) : (
             <p>About</p>
           )}</NavLink>
-          <a className="menu-item" href="">Resume</a>
+          <a className="menu-item" href="https://drive.google.com/file/d/1wnrT_kSmfDJye9maJ7mnKhbwSpmS2wvv/view?usp=sharing" target="_blank">Resume</a>
         </div>
       </div>
     </nav>

@@ -6,7 +6,7 @@ export default function NoPage() {
   return (
     <div className="no-page">
       <img className="image" src={frog}/>
-      Sorry this page does not exist
+      Sorry this page does not exist yet
     </div>
   )
 };

@@ -6,13 +6,13 @@ const Scribble = forwardRef<
 >(({ children, ...props }, ref) => {
   return (
     <div className="bg-scribble bg-left-bottom bg-contain bg-no-repeat">
-      <p 
+      <span 
         key={props.key}
         onClick={props.onClick}
         ref={ref}
       >
         {children}
-      </p>
+      </span>
     </div>
   );
 });

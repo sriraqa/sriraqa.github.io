@@ -21,15 +21,13 @@ export default function About() {
           </h2>
         </div>
         <div className="flex flex-col space-y-2 text-md">
+        <p>
+          I am a <a href="https://uwaterloo.ca/future-students/programs/systems-design-engineering" target="_blank">systems design engineering</a> student at the University of Waterloo with experience as a product designer and developer.  I love to get 
+          involved by joining hackathons like Hack the North and joining design teams like UW Blueprint!
+        </p>
           <p>
-            I am a Systems Design Engineering student at the University of Waterloo with experience as a product 
-            designer and developer. I love to get involved by joining hackathons like Hack the North and joining 
-            design teams like UW Blueprint!
-          </p>
-          <p>
-            I most recently worked at UW Blueprint as a product designer and at Magi Inc. as software engineer intern. 
-            I have previously worked at Interac as a product design intern and Imagine Communications as a full 
-            stack intern.
+            I most recently worked at <a href="https://uwblueprint.org/about" target="_blank">UW Blueprint</a> as a product designer and at <a href="https://www.magi.inc/" target="_blank">Magi Inc.</a> as a software engineer intern
+            I have previously worked at <a href="https://www.interac.ca/en/about/" target="_blank">Interac</a> as a product design intern and <a href="https://imaginecommunications.com/about-us/" target="_blank">Imagine Communications</a> as a full stack intern.
           </p>
           <p>
             In my free time, I love to work on art projects, listen to r&b and k-pop, and try out good food spots! 
