@@ -10,7 +10,7 @@ import desktop from "../assets/navcare/navcare_desktop.png";
 import versionA from "../assets/navcare/navcare_versionA.png";
 import versionB from "../assets/navcare/navcare_versionB.png";
 
-export default function Navcare() {
+export default function Interac() {
   return (
     <div className="md:px-32 flex flex-col items-center">
       <div className="flex flex-row md:space-x-12 items-center">
