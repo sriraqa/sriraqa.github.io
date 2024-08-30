@@ -28,9 +28,9 @@ export default function Home() {
         <div className="flex flex-col space-y-2 max-w-[560px]">
           <div className="flex flex-row sm:space-x-2 items-center ">
             <img className="h-[32px] hidden sm:block" src={sparkles}/>
-            <p className="text-[32px] sm:text-[36px] font-medium">
+            <h1 className="text-[32px] sm:text-[36px] font-medium">
               Hi there, I'm Sarah
-            </p>
+            </h1>
           </div>
           <div className="flex flex-col space-y-8">
             <p className="text-[24px]">

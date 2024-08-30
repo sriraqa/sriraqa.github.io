@@ -20,7 +20,7 @@ export default function Footer() {
           </a>
         </span>
         <span>
-          <a className="icon" href="https://www.linkedin.com/in/sarah-qiao-4a4488213/" target="_blank">
+          <a className="icon" href="https://www.linkedin.com/in/sarah-qiao/" target="_blank">
             <FaLinkedinIn />
           </a>
         </span>

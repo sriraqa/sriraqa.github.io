@@ -7,3 +7,13 @@
   /* box-shadow: -12px 12px 0 0 #83BEB1; */
   transform: translate3d(12px, -12px, 0);
 }
+
+.small-button {
+  display: block;
+  transition: all 0.2s;
+}
+
+.small-button:hover {
+  /* box-shadow: -12px 12px 0 0 #83BEB1; */
+  transform: translate3d(6px, -6px, 0);
+}
