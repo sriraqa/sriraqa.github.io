@@ -1,0 +1,71 @@
+.gallery-container {
+  position: relative;
+  width: 100%;
+}
+
+.gallery-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-gallery-text {
+  transition: .5s ease;
+  font-family: Sen;
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gallery-container:hover .gallery-img {
+  transition: 0.5s;
+  filter: brightness(0.5);
+}
+
+.gallery-container:hover .middle-gallery-text {
+  opacity: 1;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 33.3333333%;
+  max-width: 33.3333333%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+    position: relative;
+    left: 0;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

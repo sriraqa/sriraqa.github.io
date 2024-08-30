@@ -27,7 +27,7 @@ export default function Home() {
   }, [clicked]);
 
   return (
-    <div className="flex flex-col space-y-4 pb-20 w-full min-[930px]:px-28 sm:px-16 items-center">
+    <div className="flex flex-col pb-20 w-full min-[930px]:px-28 sm:px-16 items-center">
       {/* Header */}
       <div className="md:h-[90vh] items-center pb-20 flex flex-col-reverse min-[833px]:flex-row md:space-x-8 items-start mx-auto">
         <div className="flex flex-col space-y-2 max-w-[560px]">
@@ -58,7 +58,7 @@ export default function Home() {
       </div>
 
       {/* Projects */}
-      <div className="flex flex-col space-y-12 w-full max-w-[812px]" id="portfolio">
+      <div className="flex flex-col space-y-12 w-full max-w-[812px] pt-24" id="portfolio">
         <Button>
           <NavLink to="/interac" className="menu-item">
             <div className="flex flex-row space-x-6 items-center">
