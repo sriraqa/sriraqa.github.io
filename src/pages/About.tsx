@@ -13,24 +13,23 @@ export default function About() {
       <div className="w-full min-[980px]:w-2/5">
         <img className="max-h-[450px] w-full object-cover mb-8 min-[980px]:mb-0" src={aboutPhoto} alt="Photo at a Fountain"/>
       </div>
-      <div className="w-full min-[980px]:w-3/5 flex flex-col space-y-4">
+      <div className="w-full min-[980px]:w-3/5 flex flex-col space-y-6">
         <div className="flex flex-row space-x-2 items-center ">
           <img className="h-[28px]" src={sparkles}/>
           <h2 className="text-[28px] sm:text-[32px] font-medium">
             About me
           </h2>
         </div>
-        <div className="flex flex-col space-y-2 text-md">
-        <p>
-          I am a <a href="https://uwaterloo.ca/future-students/programs/systems-design-engineering" target="_blank">systems design engineering</a> student at the University of Waterloo with experience as a product designer and developer.  I love to get 
-          involved by joining hackathons like Hack the North and joining design teams like UW Blueprint!
-        </p>
+        <div className="flex flex-col space-y-4 text-md">
           <p>
-            I most recently worked at <a href="https://uwblueprint.org/about" target="_blank">UW Blueprint</a> as a product designer and at <a href="https://www.magi.inc/" target="_blank">Magi Inc.</a> as a software engineer intern
-            I have previously worked at <a href="https://www.interac.ca/en/about/" target="_blank">Interac</a> as a product design intern and <a href="https://imaginecommunications.com/about-us/" target="_blank">Imagine Communications</a> as a full stack intern.
+            I am a <a href="https://uwaterloo.ca/future-students/programs/systems-design-engineering" target="_blank">systems design engineering</a> student at the University of Waterloo with experience as a product designer and developer.
           </p>
           <p>
-            In my free time, I love to work on art projects, listen to r&b and k-pop, and try out good food spots! 
+            I most recently worked at <a href="https://uwblueprint.org/about" target="_blank">UW Blueprint</a> as a product designer and at <a href="https://www.magi.inc/" target="_blank">Magi Inc.</a> as a software engineer intern
+            I have previously worked at <a href="https://www.interac.ca/en/about/" target="_blank">Interac</a> as a product design intern.
+          </p>
+          <p>
+            In my free time, I love to work on <a href="https://sriraqa.github.io/#/art" target="_blank">art projects</a>, listen to r&b and k-pop, and try out good food spots! 
             I try to keep an open mindset, so I am always looking and eager to learn new things.
           </p>
         </div>
