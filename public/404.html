@@ -25,14 +25,21 @@
       var pathSegmentsToKeep = 0;
 
       var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/#/' +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') +
-        l.hash
-      );
+
+      if(!l.hash) {
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/#/' +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/')
+        );
+      }
 
     </script>
+    <link href="/src/css/NoPage.css" rel="stylesheet" />
   </head>
   <body>
+    <div className="no-page">
+      <img className="image" src="/src/assets/frog.png"/>
+      Sorry this page does not exist yet
+    </div>
   </body>
 </html>
