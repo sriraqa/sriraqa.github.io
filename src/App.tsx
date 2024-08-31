@@ -1,5 +1,7 @@
+import { useEffect } from "react";
+
 import { createRoot } from "react-dom/client";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -9,23 +11,24 @@ import Interac from "./pages/Interac";
 import ArtProjects from "./pages/ArtProjects";
 import NoPage from "./pages/NoPage";
 
-export default function App() {
-    
-  return (
-    <HashRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />}/>
-            <Route path="about" element={<About />}/>
-            <Route path="navcare" element={<Navcare />}/>
-            {/* <Route path="newsbear" element={<Newsbear />}/> */}
-            <Route path="interac" element={<Interac />}/>
-            <Route path="art" element={<ArtProjects />}/>
-            <Route path="*" element={<NoPage />}/>
-          </Route>
-        </Routes>
-    </HashRouter>
-  );
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'about', element: <About /> },
+      { path: 'navcare', element: <Navcare /> },
+      // { path: 'Newsbear', element: <Newsbear /> },
+      { path: 'interac', element: <Interac /> },
+      { path: 'art', element: <ArtProjects /> },
+      { path: '*', element: <NoPage /> },
+    ]
+  }
+]);
+
+export default function App() { 
+  return <RouterProvider router={router} />
 }
 
 const root = createRoot(document.getElementById("root")!);
