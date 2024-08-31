@@ -9,7 +9,7 @@ import SmallButton from "../components/SmallButton";
 
 export default function About() {
   return (
-    <div className="min-[980px]:pt-16 px-0 min-[980px]:px-32 min-[1600px]:px-52 flex flex-col min-[980px]:flex-row items-center min-[980px]:space-x-8">
+    <div id="top" className="min-[980px]:pt-16 pb-20 px-0 min-[980px]:px-32 min-[1600px]:px-52 flex flex-col min-[980px]:flex-row items-center min-[980px]:space-x-8">
       <div className="w-full min-[980px]:w-2/5">
         <img className="max-h-[450px] w-full object-cover mb-8 min-[980px]:mb-0" src={aboutPhoto} alt="Photo at a Fountain"/>
       </div>

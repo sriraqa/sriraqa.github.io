@@ -12,7 +12,7 @@ import versionB from "../assets/navcare/navcare_versionB.png";
 
 export default function Newsbear() {
   return (
-    <div className="md:px-32 flex flex-col items-center">
+    <div id="top" className="md:px-32 flex flex-col items-center">
       <div className="flex flex-row md:space-x-12 items-center">
         <div className="py-16 flex flex-col space-y-4">
           <div className="flex flex-row sm:space-x-2 items-center">

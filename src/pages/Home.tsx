@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 import Button from "../components/Button";
 
@@ -27,7 +27,7 @@ export default function Home() {
   }, [clicked]);
 
   return (
-    <div className="flex flex-col pb-20 w-full min-[930px]:px-28 sm:px-16 items-center">
+    <div id="top" className="flex flex-col pb-20 w-full min-[930px]:px-28 sm:px-16 items-center">
       {/* Header */}
       <div className="md:h-[90vh] items-center pb-20 flex flex-col-reverse min-[833px]:flex-row md:space-x-8 items-start mx-auto">
         <div className="flex flex-col space-y-2 max-w-[560px]">
@@ -58,9 +58,9 @@ export default function Home() {
       </div>
 
       {/* Projects */}
-      <div className="flex flex-col space-y-12 w-full max-w-[812px] pt-24" id="portfolio">
+      <div id="portfolio" className="flex flex-col space-y-12 w-full max-w-[812px] pt-24">
         <Button>
-          <NavLink to="/interac" className="menu-item">
+          <NavHashLink to="/interac#top" className="menu-item">
             <div className="flex flex-row space-x-6 items-center">
               <div className="sm:w-3/5 flex flex-col space-y-4">
                 <div className="flex flex-col">
@@ -83,10 +83,10 @@ export default function Home() {
                 <img src={interac}/>
               </div>
             </div>
-          </NavLink>
+          </NavHashLink>
         </Button>
         <Button>
-          <NavLink to="/navcare" className="menu-item">
+          <NavHashLink to="/navcare#top" className="menu-item">
             <div className="flex flex-row space-x-6 items-center">
               <div className="sm:w-3/5 flex flex-col space-y-4">
                 <div className="flex flex-col">
@@ -109,10 +109,10 @@ export default function Home() {
                 <img src={navcare}/>
               </div>
             </div>
-          </NavLink>
+          </NavHashLink>
         </Button>
         {/* <Button>
-          <NavLink to="/newsbear" className="menu-item">
+          <NavHashLink to="/newsbear#top" className="menu-item">
             <div className="flex flex-row space-x-6 items-center">
               <div className="sm:w-3/5 flex flex-col space-y-4">
                 <div className="flex flex-col">
@@ -135,10 +135,10 @@ export default function Home() {
                 <img src={newsbear}/>
               </div>
             </div>
-          </NavLink>
+          </NavHashLink>
         </Button> */}
         <Button>
-          <NavLink to="/art" className="menu-item">
+          <NavHashLink to="/art#top" className="menu-item">
             <div className="flex flex-row space-x-6 items-center">
               <div className="sm:w-3/5 flex flex-col space-y-4">
                 <div className="flex flex-col">
@@ -161,7 +161,7 @@ export default function Home() {
                 <img src={art}/>
               </div>
             </div>
-          </NavLink>
+          </NavHashLink>
         </Button>
       </div>
     </div>

@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function ArtProjects() {
   return (
-    <div className="md:px-32">
+    <div id="top" className="md:px-32">
       <div className="flex flex-row space-x-4 justify-between items-center">
         <div className="py-16 flex flex-col space-y-4">
           <div className="flex flex-row sm:space-x-2 items-center ">

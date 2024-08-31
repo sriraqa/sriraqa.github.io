@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -39,10 +39,10 @@ export default function Navbar() {
       </AnimatePresence>
 
       <div className="navbar-container">
-        <NavLink to="/" className="logo-text">
+        <NavHashLink to="/#top" className="logo-text">
           <img className="logo" src={logo} alt="Logo"/>
           Sarah Qiao
-        </NavLink>
+        </NavHashLink>
 
         <button 
           onClick={() => toggleDrawer()}
@@ -51,18 +51,18 @@ export default function Navbar() {
           <FaBars size={20} />
         </button>
         <div className="menu hidden sm:flex">
-          <NavLink to="/" className="menu-item">{(location.pathname === "/") ? (
+          <NavHashLink to="/#top" className="menu-item">{(location.pathname === "/") ? (
             <Scribble>Home</Scribble>
           ) : (
             <p>Home</p>
           )}
-          </NavLink>
+          </NavHashLink>
           <NavHashLink to="/#portfolio" className="menu-item">Portfolio</NavHashLink>
-          <NavLink to="/about" className="menu-item">{(location.pathname === "/about") ? (
+          <NavHashLink to="/about#top" className="menu-item">{(location.pathname === "/about") ? (
             <Scribble>About</Scribble>
           ) : (
             <p>About</p>
-          )}</NavLink>
+          )}</NavHashLink>
           <a className="menu-item" href="https://drive.google.com/file/d/1wnrT_kSmfDJye9maJ7mnKhbwSpmS2wvv/view?usp=sharing" target="_blank">Resume</a>
         </div>
       </div>
