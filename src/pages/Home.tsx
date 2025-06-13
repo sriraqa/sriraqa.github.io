@@ -206,7 +206,7 @@ export default function Home() {
             </div>
           </NavHashLink>
         </Button>
-        <Button>
+        {/* <Button>
           <NavHashLink to="/newsbear#top" className="menu-item">
             <div className="flex flex-row space-x-6 items-center">
               <div className="sm:w-3/5 flex flex-col space-y-4">
@@ -247,7 +247,7 @@ export default function Home() {
               </div>
             </div>
           </NavHashLink>
-        </Button>
+        </Button> */}
         <Button>
           <NavHashLink to="/art#top" className="menu-item">
             <div className="flex flex-row space-x-6 items-center">

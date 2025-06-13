@@ -28,6 +28,7 @@ const Layout = () => {
   }, [showOverlay]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setShowOverlay(true);
   }, [location]);
 
