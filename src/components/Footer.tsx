@@ -2,15 +2,28 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaPaperPlane } from "react-icons/fa";
 
-import "../css/Footer.css"
+import "../css/Footer.css";
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <p style={{ width:"124px" }}>2024 Sarah Qiao</p>
-      <div style={{ width:"124px", textAlign:"right", display:"flex", flexDirection:"row-reverse", gap:"14px" }}>
+      <p style={{ width: "124px" }}>2025 Sarah Qiao</p>
+      <div
+        style={{
+          width: "124px",
+          textAlign: "right",
+          display: "flex",
+          flexDirection: "row-reverse",
+          gap: "14px",
+        }}
+      >
         <span>
-          <a className="icon" href="mailto: syqiao@uwaterloo.ca" target="_blank">
+          <a
+            className="icon"
+            href="mailto: syqiao@uwaterloo.ca"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaPaperPlane />
           </a>
         </span>
@@ -20,11 +33,16 @@ export default function Footer() {
           </a>
         </span>
         <span>
-          <a className="icon" href="https://www.linkedin.com/in/sarah-qiao/" target="_blank">
+          <a
+            className="icon"
+            href="https://www.linkedin.com/in/sarah-qiao/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedinIn />
           </a>
         </span>
       </div>
     </footer>
-  )
-};
+  );
+}

@@ -25,12 +25,13 @@ export default function Navbar() {
     <nav className={`navbar ${openDrawer ? "h-full" : ""}`}>
       <AnimatePresence>
         {openDrawer && (
-          <motion.div className="absolute z-20 h-full w-full text-body"
+          <motion.div
+            className="absolute z-20 h-full w-full text-body"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{
-              opacity: { duration: 0.3 }
+              opacity: { duration: 0.3 },
             }}
           >
             <Drawer handleDrawerToggle={() => toggleDrawer()} />
@@ -40,32 +41,41 @@ export default function Navbar() {
 
       <div className="navbar-container">
         <NavHashLink to="/#top" className="logo-text">
-          <img className="logo" src={logo} alt="Logo"/>
+          <img className="logo" src={logo} alt="Logo" />
           Sarah Qiao
         </NavHashLink>
 
-        <button 
-          onClick={() => toggleDrawer()}
-          className="sm:hidden"
-        >
+        <button onClick={() => toggleDrawer()} className="sm:hidden">
           <FaBars size={20} />
         </button>
         <div className="menu hidden sm:flex">
-          <NavHashLink to="/#top" className="menu-item">{(location.pathname === "/") ? (
-            <Scribble>Home</Scribble>
-          ) : (
-            <p>Home</p>
-          )}
+          <NavHashLink to="/#top" className="menu-item">
+            {location.pathname === "/" ? (
+              <Scribble>Home</Scribble>
+            ) : (
+              <p>Home</p>
+            )}
           </NavHashLink>
-          <NavHashLink to="/#portfolio" className="menu-item">Portfolio</NavHashLink>
-          <NavHashLink to="/about#top" className="menu-item">{(location.pathname === "/about") ? (
-            <Scribble>About</Scribble>
-          ) : (
-            <p>About</p>
-          )}</NavHashLink>
-          <a className="menu-item" href="https://drive.google.com/file/d/1wnrT_kSmfDJye9maJ7mnKhbwSpmS2wvv/view?usp=sharing" target="_blank">Resume</a>
+          <NavHashLink to="/#portfolio" className="menu-item">
+            Portfolio
+          </NavHashLink>
+          <NavHashLink to="/about#top" className="menu-item">
+            {location.pathname === "/about" ? (
+              <Scribble>About</Scribble>
+            ) : (
+              <p>About</p>
+            )}
+          </NavHashLink>
+          <a
+            className="menu-item"
+            href="https://drive.google.com/file/d/1wnrT_kSmfDJye9maJ7mnKhbwSpmS2wvv/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </nav>
-  )
-};
+  );
+}
