@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Cursor from "../components/Cursor";
 
 import "../App.css";
 
@@ -34,6 +35,7 @@ const Layout = () => {
 
   return (
     <div className="App">
+      <Cursor />
       <Navbar />
       <div className="body">
         <Outlet />

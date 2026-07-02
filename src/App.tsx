@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 import { createRoot } from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from "./pages/Layout";
@@ -17,18 +15,18 @@ const router = createHashRouter([
     element: <Layout />,
     children: [
       { index: true, element: <Home /> },
-      { path: 'about', element: <About /> },
-      { path: 'navcare', element: <Navcare /> },
+      { path: "about", element: <About /> },
+      { path: "navcare", element: <Navcare /> },
       // { path: 'Newsbear', element: <Newsbear /> },
-      { path: 'interac', element: <Interac /> },
-      { path: 'art', element: <ArtProjects /> },
-      { path: '*', element: <NoPage /> },
-    ]
-  }
+      { path: "interac", element: <Interac /> },
+      { path: "art", element: <ArtProjects /> },
+      { path: "*", element: <NoPage /> },
+    ],
+  },
 ]);
 
-export default function App() { 
-  return <RouterProvider router={router} />
+export default function App() {
+  return <RouterProvider router={router} />;
 }
 
 const root = createRoot(document.getElementById("root")!);

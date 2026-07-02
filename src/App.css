@@ -62,4 +62,19 @@
 p a {
   border-bottom: 2.5px solid #97D3C5;
   padding-bottom: 0.3px;
+  transition: border-bottom-color 0.25s ease-out, color 0.25s ease-out;
+}
+
+p a:hover {
+  color: #8A8A8E;
+  border-bottom-color: #c3e6dd;
+}
+
+.icon {
+  transition: color 0.25s ease-out;
+  display: inline-flex; /* keeps the icon sized/aligned tightly within the <a> */
+}
+
+.icon:hover {
+  color: #8A8A8E;
 }

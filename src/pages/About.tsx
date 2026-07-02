@@ -40,14 +40,18 @@ export default function About() {
           </p>
           <p>
             I am currently working at{" "}
-            <a href="https://hackthenorth.com/" target="_blank">
-              Hack the North
+            <a href="https://www.stackadapt.com/platform" target="_blank">
+              StackAdapt
             </a>{" "}
-            as a frontend developer and I most recently worked at{" "}
+            as a full stack developer. I previously worked at{" "}
             <a href="https://www.magi.inc/" target="_blank">
               Magi Inc.
             </a>{" "}
-            as a software engineer intern. I have previously worked at{" "}
+            as a software engineer intern and{" "}
+            <a href="https://hackthenorth.com/" target="_blank">
+              Hack the North
+            </a>{" "}
+            as a frontend developer. I have also worked at{" "}
             <a href="https://www.interac.ca/en/about/" target="_blank">
               Interac
             </a>{" "}

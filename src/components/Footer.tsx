@@ -28,7 +28,12 @@ export default function Footer() {
           </a>
         </span>
         <span>
-          <a className="icon" href="https://github.com/sriraqa" target="_blank">
+          <a
+            className="icon"
+            href="https://github.com/sriraqa"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub />
           </a>
         </span>
